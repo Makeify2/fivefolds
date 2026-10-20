@@ -1,0 +1,33 @@
+You are working on an existing static portfolio site (index.html + styles.css, no JavaScript, no frameworks). Improve it with the following enhancements. Do not rewrite the existing content or palette; refine what is there.
+
+Content rules stay in force: do not invent projects, people, testimonials, statistics, awards or dates. No external JavaScript, no libraries.
+
+Enhancements to make:
+
+1. Typography and display polish
+- Add optical refinements: font-feature-settings for the serif ("ss01" if Fraunces supports it, otherwise skip), and use Fraunces italic for one or two short emphasised words already present in headings (do not add new words).
+- Slightly tighten letter-spacing on the mono eyebrows only at large viewports.
+
+2. Section flourishes (CSS / inline SVG only, no images)
+- Add a very subtle paper-grain background to the page body using an inline SVG feTurbulence data-URI at low opacity (max 4%), over the existing #FDFAF3 colour, so it stays warm not dirty.
+- Add a small inline SVG divider flourish (a thin 1px rule with a tiny leaf-green dot or asterisk at its centre) above each section's heading row, consistent across sections.
+
+3. Project cards
+- Give each card a two-character monospace index ("01", "02", "03") in the muted colour, top-right corner.
+- Make the "View repository" links behave like a bordered pill: 1px rule border, radius 999px, padding ~0.45rem 0.9rem, JetBrains Mono 0.72rem uppercase with letter-spacing, and on hover invert to deep-leaf background with paper text and nudge an inline arrow right by 0.3rem with a smooth 0.2s transition. GoFiveChat has no link and must keep no link; keep its stack line pinned to the card bottom like the others.
+- On hover, lift the whole card 4px with the deeper shadow (shadow-2 style), 0.25s ease. Only where the device supports hover, use @media (hover: hover).
+
+4. Buttons and nav
+- Give the two hero pill buttons the same hover treatment as the card links (invert on hover, subtle lift). Add a small inline SVG arrow icon inside the "Contact" button.
+- Add a dot before the wordmark in the nav that transitions green → orange on hover.
+
+5. Details
+- Add ::selection styling: leaf-glow background, ink text.
+- Add a favicon as an inline SVG data URI: rounded square in paper colour, deep-leaf "FF" monogram, both letters in Fraunces-style serifs approximated with font-family="serif".
+- Add Open Graph and Twitter meta tags: og:title "FiveFolds", og:description from the existing site description, og:type website, og:url https://makeify2.github.io/fivefolds/, twitter:card summary. No og:image (do not invent image URLs).
+- Make the footer a touch more balanced: left "© 2026 FiveFolds", centre a 1px flex line, right the existing mono glyph, all vertically centered.
+
+6. Keep everything working
+- Do not change the palette variables, the copy, the layout grid, or the responsive breakpoints.
+- Do not exceed ~550 lines of CSS total.
+- When done, print the file list and the new CSS line count.
