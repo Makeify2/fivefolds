@@ -1,6 +1,6 @@
 # FiveFolds
 
-Portfolio site for FiveFolds, a two-person development group from Orlando, Florida.
+Portfolio site for FiveFolds, two developers working remotely together: makeify and yuk1n0w.
 
 Static HTML and CSS, no build step.
 
