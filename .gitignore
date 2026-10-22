@@ -3,3 +3,5 @@ tmp-*.png
 prompt.txt
 enhance.txt
 *.png.tmp
+dist/
+.wrangler/
