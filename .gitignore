@@ -3,5 +3,7 @@ tmp-*.png
 prompt.txt
 enhance.txt
 *.png.tmp
+node_modules/
 dist/
 .wrangler/
+.commandcode/
